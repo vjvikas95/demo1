@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown-Menu</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="menu-bar">
+            <a href="#"> <img src="logo.svg" style="float: left;padding-left: 80px;"></a>
+            <ul>
+                <li>
+                    <a href="#" class="active">Home</a></li>
+                <li>About Us</li>
+                <li>Services</li>
+                <li>Clients</li>
+                <li>Investers</li>
+                <li>Pricing</li>
+                <li>Training</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-home" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Profile</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-comment" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Message</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-question-circle" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-cog" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Setting</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-lock" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Password</span>
+                    </a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-sign-out" aria-hidden="true"></i>
+                        </span>
+                        <span class="title">Sign out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            function toggleMenu(){
+                let navigation = document.querySelector('.navigation');
+                navigation.classList.toggle('active');
+                let toggle = document.querySelector('.toggle');
+                toggle.classList.toggle('active');
+            }
+        </script>
+        
+    </body>
+</html>
